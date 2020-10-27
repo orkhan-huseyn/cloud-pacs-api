@@ -1,13 +1,13 @@
 <html>
+
 <head>
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>PostDICOM Cloud API Reference Implementation</title>
-    <link type="image/x-icon" rel="Shortcut Icon" href="data:image/png;base64,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" />
+    <link type="image/x-icon" rel="Shortcut Icon"
+        href="data:image/png;base64,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" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://www.postdicom.com/cloud-api/PostDicomCloudApi.3.4.min.js"></script>
-    <script src="assets/js/main.js"></script>
-
 </head>
+
 <body id="body">
     <span id="forkongithub">
         <a href="https://github.com/postdicom/cloud-pacs-api" target="_blank">Fork me on GitHub</a>
@@ -31,7 +31,11 @@
             </form>
         </div>
         <div class="desc_content">
-            <h3>For more information please visit <a class="a_tag_link" href="https://www.postdicom.com/en/api-documentation/using-postdicom-cloud-api.html" target="_blank">"Using PostDICOM Cloud API"</a> documentation.<br />If you do not have an API key, <a class="a_tag_link" href="https://www.postdicom.com/en/contact" target="_blank">contact us</a> to get yours.</h3>
+            <h3>For more information please visit <a class="a_tag_link"
+                    href="https://www.postdicom.com/en/api-documentation/using-postdicom-cloud-api.html"
+                    target="_blank">"Using PostDICOM Cloud API"</a> documentation.<br />If you do not have an API key,
+                <a class="a_tag_link" href="https://www.postdicom.com/en/contact" target="_blank">contact us</a> to get
+                yours.</h3>
         </div>
     </div>
 
@@ -75,7 +79,9 @@
             </form>
         </div>
         <div class="desc_content">
-            <h3>For more information please visit <a class="a_tag_link" href="https://www.postdicom.com/en/api-documentation/using-postdicom-cloud-api.html" target="_blank">"Using PostDICOM Cloud API"</a> documentation.</h3>
+            <h3>For more information please visit <a class="a_tag_link"
+                    href="https://www.postdicom.com/en/api-documentation/using-postdicom-cloud-api.html"
+                    target="_blank">"Using PostDICOM Cloud API"</a> documentation.</h3>
         </div>
     </div>
 
@@ -97,13 +103,15 @@
                     <select class="input" id="InstitutionSelectBox" onchange="InstitutionOnSelected()"></select>
                     <div style="float:left; width:50%;">
                         <label class="file">
-                            <input style="display:none;" type="file" multiple onchange="SelectFiles(event,1)">Select File
+                            <input style="display:none;" type="file" multiple onchange="SelectFiles(event,1)">Select
+                            File
                         </label>
                         <span style="text-indent:-25px;" id="upload_file_count_text">0 file selected</span>
                     </div>
                     <div style="float:left; width:50%;">
                         <label class="file">
-                            <input style="display:none;" type="file" multiple webkitdirectory mozdirectory onchange="SelectFiles(event,2)">Select Folder
+                            <input style="display:none;" type="file" multiple webkitdirectory mozdirectory
+                                onchange="SelectFiles(event,2)">Select Folder
                         </label>
                         <span id="upload_folder_count_text">0 file selected</span>
                     </div>
@@ -113,7 +121,9 @@
                 </div>
             </div>
             <div class="desc_content">
-                <h3>For more information please visit <a class="a_tag_link" href="https://www.postdicom.com/en/api-documentation/using-postdicom-cloud-api.html" target="_blank">"Using PostDICOM Cloud API"</a> documentation.</h3>
+                <h3>For more information please visit <a class="a_tag_link"
+                        href="https://www.postdicom.com/en/api-documentation/using-postdicom-cloud-api.html"
+                        target="_blank">"Using PostDICOM Cloud API"</a> documentation.</h3>
             </div>
         </div>
 
@@ -172,15 +182,19 @@
                     <label>User</label>
                     <select class="input" id="UserSearchSelectBox" onchange="UserSearchOnSelected()"></select>
                     <label>Institution</label>
-                    <select class="input" id="InstitutionSearchSelectBox" onchange="InstitutionSearchOnSelected()"></select>
-                    <button class="button" id="search_button" onclick="PatientOrderSearch()">Search Patient Orders</button>
+                    <select class="input" id="InstitutionSearchSelectBox"
+                        onchange="InstitutionSearchOnSelected()"></select>
+                    <button class="button" id="search_button" onclick="PatientOrderSearch()">Search Patient
+                        Orders</button>
                 </form>
                 <div class="return" title="Return to Cloud API Functions" onclick="ReturnSelectScreen()">
 
                 </div>
             </div>
             <div class="desc_content">
-                <h3>For more information please visit <a class="a_tag_link" href="https://www.postdicom.com/en/api-documentation/using-postdicom-cloud-api.html" target="_blank">"Using PostDICOM Cloud API"</a> documentation.</h3>
+                <h3>For more information please visit <a class="a_tag_link"
+                        href="https://www.postdicom.com/en/api-documentation/using-postdicom-cloud-api.html"
+                        target="_blank">"Using PostDICOM Cloud API"</a> documentation.</h3>
             </div>
         </div>
 
@@ -216,11 +230,13 @@
                 <form autocomplete="off" action="javascript:void(0);">
                     <label>User</label>
                     <select class="input" id="FolderUserSelectBox" onchange="FolderUserOnSelected()"></select>
-                    <button class="button" id="search_button" onclick="FolderSearchButtonOnClicked('')">Get Folders</button>
+                    <button class="button" id="search_button" onclick="FolderSearchButtonOnClicked('')">Get
+                        Folders</button>
                 </form>
                 <h3>Available Folder Functions:</h3>
                 <div class="display_flex" style="justify-content: flex-start;">
-                    <button class="secondary_folder_buttons add_folder_button" onclick="ShowFolderCreateForm()">Create New Folder</button>
+                    <button class="secondary_folder_buttons add_folder_button" onclick="ShowFolderCreateForm()">Create
+                        New Folder</button>
                 </div>
                 <!--<button class="secondary_folder_buttons delete_folder_button">Delete Folder</button>
                 <button class="secondary_folder_buttons add_order_to_folder_button">Add Order to Folder</button>-->
@@ -229,12 +245,15 @@
                 </div>
             </div>
             <div class="desc_content">
-                <h3>For more information please visit <a class="a_tag_link" href="https://www.postdicom.com/en/api-documentation/using-postdicom-cloud-api.html" target="_blank">"Using PostDICOM Cloud API"</a> documentation.</h3>
+                <h3>For more information please visit <a class="a_tag_link"
+                        href="https://www.postdicom.com/en/api-documentation/using-postdicom-cloud-api.html"
+                        target="_blank">"Using PostDICOM Cloud API"</a> documentation.</h3>
             </div>
         </div>
 
         <div class="grid_folder folder_result_container" id="folder_result_grid">
-            <p class="folder_path_text">Folder path: <span onclick="FolderSearchButtonOnClicked('')">Home</span><label id="folder_path"></label></p>
+            <p class="folder_path_text">Folder path: <span onclick="FolderSearchButtonOnClicked('')">Home</span><label
+                    id="folder_path"></label></p>
             <div class="display_flex" style="justify-content: flex-start;" id="folder_result_container">
 
             </div>
@@ -361,7 +380,9 @@
             <div class="form_body_class" style="height:calc(100% - 98px)">
                 <div class="select_file_button_area">
                     <label class="select_file_button">
-                        <input class="display_none" type="file" multiple onchange="SelectDocumentFileInputOnChanged(event)">Select File
+                        <input class="display_none" type="file" multiple
+                            onchange="SelectDocumentFileInputOnChanged(event)">
+                            Select File
                     </label>
                 </div>
                 <div class="file_progress_bar">
@@ -429,7 +450,8 @@
                         Folder Description:
                     </div>
                     <div class="create_folder_form_each_column_class">
-                        <textarea class="anonymize_tb" style="resize:none; height: 130px" id="folder_create_description" placeholder="Created from API" disabled></textarea>
+                        <textarea class="anonymize_tb" style="resize:none; height: 130px" id="folder_create_description"
+                            placeholder="Created from API" disabled></textarea>
                     </div>
                 </div>
             </div>
@@ -439,5 +461,9 @@
         </div>
     </div>
 
+    <script src="https://www.postdicom.com/cloud-api/PostDicomCloudApi.3.4.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
